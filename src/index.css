@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 67% 94%;
+    --foreground: 150 50% 25%;
+    --card: 240 67% 94%;
+    --card-foreground: 282 44% 27%;
+    --popover: 240 67% 94%;
+    --popover-foreground: 282 44% 27%;
+    --primary: 150 50% 25%;
+    --primary-foreground: 240 67% 94%;
+    --secondary: 150 45% 30%;
+    --secondary-foreground: 240 67% 94%;
+    --tertiary: 160 50% 45%;
+    --tertiary-foreground: 240 67% 94%;
+    --muted: 240 60% 88%;
+    --muted-foreground: 150 30% 35%;
+    --accent: 240 60% 88%;
+    --accent-foreground: 150 50% 25%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 240 67% 94%;
+    --border: 240 60% 90%;
+    --input: 240 60% 90%;
+    --ring: 150 50% 25%;
+    --radius: 12px;
+    --success: 155 40% 40%;
+    --success-foreground: 240 67% 94%;
+    --warning: 35 85% 50%;
+    --warning-foreground: 240 67% 94%;
+    --chart-income: 150 50% 25%;
+    --chart-expense: 10 75% 60%;
+    --chart-goal: 160 50% 45%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
