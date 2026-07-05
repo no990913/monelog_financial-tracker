@@ -1,5 +1,7 @@
 Monelog - Financial Tracker
 
+Personal finance tracker built with TypeScript, Vite, and Tailwind CSS.
+
 ## Getting started
 
 > **Prerequisites:**
